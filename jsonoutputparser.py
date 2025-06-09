@@ -4,6 +4,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_openai import ChatOpenAI
 
+# in the .env file paste this line HUGGINGFACEHUB_API_TOKEN="<tokenname>"
 load_dotenv()
 model = ChatOpenAI()
 '''
