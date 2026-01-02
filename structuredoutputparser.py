@@ -1,7 +1,7 @@
 #from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
-from langchain.output_parsers import StructuredOutputParser, ResponseSchema
+from langchain_core.output_parsers import StructuredOutputParser, ResponseSchema
 from langchain_openai import ChatOpenAI
 
 
@@ -36,3 +36,4 @@ chain = template | model | parser
 result = chain.invoke({'topic':'black hole'})
 
 print(result)
+
